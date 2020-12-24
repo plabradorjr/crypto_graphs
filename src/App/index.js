@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import './App.css';
-import Welcome from './WelcomeMessage'
+import Welcome from './WelcomeMessage';
+import AppLayout from './AppLayout';
+import AppBar from './AppBar';
 
 function App() {
   return (
-    <div>
+    <AppLayout>
+      <AppBar />
       <Welcome />
-    </div>
+    </AppLayout>
   );
 }
 
